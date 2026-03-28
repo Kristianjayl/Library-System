@@ -1,15 +1,15 @@
-{%extends 'Library_System/book_list.html'%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library System</title>
+    <title>Document</title>
 </head>
 <body>
-        <h1>Home Page</h1>
-        
-        
-
+    <ul>
+    {%for books in books%}
+        <li>{{book.title}} - {{book.author}}</li>
+    {%endfor%}
+    </ul>
 </body>
 </html>
