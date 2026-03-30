@@ -1,4 +1,4 @@
-{%extends 'Library_System/book_list.html'%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +7,14 @@
     <title>Library System</title>
 </head>
 <body>
-        <h1>Home Page</h1>
-        
-        
+    <h1>Home Page</h1>
+    <br/>
+    {%include 'navbar.html' %}
+    <hr/>
+    {%block bookinfo%}    
+        <h1>No Books</h1>
+    {%endblock%}
 
+    {%include 'footer.html'%}
 </body>
 </html>

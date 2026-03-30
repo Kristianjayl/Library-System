@@ -6,10 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-    {%for books in books%}
-        <li>{{book.title}} - {{book.author}}</li>
-    {%endfor%}
-    </ul>
+    {% extends "Library_System/index.html" %}
+    {%block bookinfo %}
+        <ul>
+        {%for book in books%}
+            <li>{{book.title}} - {{book.author}}</li>
+        {%endfor%}
+        </ul>
+    {%endblock%}
 </body>
 </html>

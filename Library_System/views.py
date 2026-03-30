@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Book
+from django.template import loader
 
 # Create your views here.
 def index(request):
