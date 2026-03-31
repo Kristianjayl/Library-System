@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     
+        .footer-text{
+            text-align: center;
+        }
+        .footnav li{
+            display: inline;
+            margin-right: 15px;
+        }
+        .footnav li>a{
+            text-decoration: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Footer</h1>
+    <nav class="footnav">
+        <ul>
+            <li><a href="{% url 'help'%}">Help</a></li>
+            <li><a href="{% url 'FAQ' %}">FAQ</a></li>
+            <li><a href="{%url 'contact'%}">Contact Us</a></li>
+            <li><a href="{% url 'about_us' %}">About</a></li>
+            <li><a href="{% url 'TaP' %}">Terms and Privacy</a></li>
+        </ul>
+    </nav>
+
+     <p class="footer-text">© 2026 Library System. All rights reserved.</p>
+</body>
+</html>

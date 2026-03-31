@@ -9,3 +9,18 @@ def index(request):
 def book_list(request):
     books = Book.objects.all()
     return render(request, 'Library_System/book_list.html', {'books':books})
+
+def about(request):
+    return render(request, 'Library_System/about_us.html')
+
+def help(request):
+    return render(request, 'Library_System/help.html')
+
+def FAQ(request):
+    return render(request, 'Library_System/FAQ.html')
+
+def TaP(request):
+    return render(request, 'Library_System/TaP.html')
+
+def contact(request):
+    return render(request, 'Library_System/contact.html')

@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .navbar{
+            font-size: 20px;
+        }
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .navbar li>a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <p>You have reached the bottom of this page, thank you for your time.</p>
-</body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li>   
+                <a href="">Catalog</a>
+            </li>
+            <li>
+                <a href="">My Books</a>
+            </li>
+            <li>
+                <a href="">Reservations</a>
+            </li>
+        </ul>
+    </nav>
+</body> 
 </html>
