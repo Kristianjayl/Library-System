@@ -1,25 +1,10 @@
+{% extends "Library_System/base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library System</title>
-    
-</head>
-<body>
-    <header>
-        <h1>Home Page</h1>
-        {%include 'Library_System/navbar.html' %}  
-    </header>
-    <div class="books-container">
-        {% block bookinfo %}    
-        <h1>No Books</h1>
-        {%endblock%}
-    </div>
-    
+{% block title%}
+ HOME Page
+{% endblock %}
 
-    <!--FOOTER -->
-    {%include 'Library_System/footer.html'%}
-</body>
-</html>
+
+{% block content%}
+    <h1>Home Page</h1>
+{% endblock %}

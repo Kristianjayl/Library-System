@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Privacy</title>
-    <style>
+{% extends 'Library_System/base.html' %}
+
+
+{% block title %}
+Terms And Privacy
+{% endblock %}
+
+{% block extra_css %}
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,10 +33,12 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
-    </style>
-</head>
-<body>
-    {%include 'Library_System/navbar.html' %}  
+</style>
+
+{% endblock %}
+
+{% block content %}
+
 
 <div class="container">
     <h1>Terms & Privacy</h1>
@@ -65,6 +69,4 @@
         If you have questions about these terms or privacy policies, please visit our Contact Us page to get in touch.
     </p>
 </div>
-    {%include 'Library_System/footer.html'%}
-</body>
-</html>
+{% endblock %}

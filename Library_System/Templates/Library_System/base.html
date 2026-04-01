@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MY SITE{% endblock %}</title>
+    {% block extra_css %}
+    {% endblock %}
+</head>
+<body>
+
+    <header>
+        <h1>My Site</h1>
+    </header>
+
+    <nav>
+        {% include 'Library_System/navbar.html' %}
+    </nav> 
+    <main>
+        {% block content %}
+        <p>No content</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        {% include 'Library_System/footer.html' %}
+    </footer>
+</body>
+</html>
