@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Library_System.urls')),
-    
 ]
+
+handler404 = 'Library_System.views.custom_404_view'

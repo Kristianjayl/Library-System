@@ -1,16 +1,26 @@
 <nav class="navbar">
-        <ul>
-            <li>
-                <a href="{% url 'index' %}">Home</a>
-            </li>
-            <li>   
-                <a href="">Catalog</a>
-            </li>
-            <li>
-                <a href="">My Books</a>
-            </li>
-            <li>
-                <a href="">Reservations</a>
-            </li>
+
+    <div class="nav-container">
+
+        <!-- Logo / Brand -->
+        <div class="logo">
+            <a href="{% url 'index' %}">📚 Library</a>
+        </div>
+
+        <!-- Links -->
+        <ul class="nav-links">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="{% url 'book_list' %}">My Books</a></li>
+            <li><a href="#">Reservations</a></li>
         </ul>
+
+        <!-- Search -->
+        <form class="search">
+            <input type="search" placeholder="Search books...">
+            <button type="submit">🔍</button>
+        </form>
+
+    </div>
+
 </nav>

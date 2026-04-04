@@ -14,6 +14,7 @@ class Book(models.Model):
         return self.title
 
 class Member(models.Model):
+    
     name = models.CharField(max_length=50)
     email = models.EmailField()
     phone = models.CharField(max_length=15, validators=[RegexValidator(r'^\+?1?\d{9,15}$')])
