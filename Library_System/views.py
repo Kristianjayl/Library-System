@@ -7,8 +7,12 @@ def index(request):
     return render(request, 'Library_System/index.html')
 
 def book_list(request):
-    books = Book.objects.all()
-    return render(request, 'Library_System/book_list.html', {'books':books})
+    query = request.GET.get('query', '') # get search item from the form.
+    if query:
+        books = Book.objects.filter(title__icontains=query)
+    else:
+        books = Book.objects.all()
+    return render(request, 'Library_System/book_list.html', {'books':books, 'query': query})
 
 def about(request):
     return render(request, 'Library_System/about_us.html')

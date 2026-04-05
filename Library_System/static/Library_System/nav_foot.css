@@ -77,34 +77,6 @@ body {
     width: 100%;
 }
 
-/* SEARCH (RIGHT) */
-.search {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-}
-
-.search input {
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-}
-
-.search button {
-    padding: 6px 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #52796f;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.search button:hover {
-    background-color: #354f52;
-}
 
 /* ================= FOOTER ================= */
 .footer {
