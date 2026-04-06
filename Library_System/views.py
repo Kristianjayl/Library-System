@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from .models import Book
-
-
 # Create your views here.
 def index(request):
     return render(request, 'Library_System/index.html')
@@ -31,3 +29,6 @@ def contact(request):
 
 def custom_404_view(request, exception):
     return render(request, "404.html", {"is_404": True}, status=404)
+
+
+

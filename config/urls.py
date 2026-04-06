@@ -16,10 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from accounts import views as accounts_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Library_System.urls')),
+
+    path('accounts/', include('accounts.urls')),
+
+    ## Login and Registration Friendly top level urls
+    path('login/', accounts_views.login, name='login'),
+    path('registration/', accounts_views.registration, name='registration'),
+    
 ]
 
 handler404 = 'Library_System.views.custom_404_view'

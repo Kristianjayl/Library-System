@@ -13,7 +13,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'Library_System/main.css' %}">
     <link rel="stylesheet" href="{% static 'Library_System/nav_foot.css' %}">
-    <link rel="stylesheet" href="{% static 'Library_System/search.css' %}">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -31,7 +30,7 @@
     </main>
 
     {% if not is_404 %}
-        <!-- FOOTER -->
+        <!-- FOOTER --> 
         {% include 'Library_System/footer.html' %}
     {% endif %}
 
