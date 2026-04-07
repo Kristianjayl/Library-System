@@ -2,11 +2,27 @@
 
 {% block title %}
     Registration
-{%endblock%}
+{% endblock %}
 
 {% block content %}
-    <h1>Registration</h1>
-    <form action="">
-        
-    </form>
-{%endblock%}
+    <div class="auth-box">
+        <h1>Create Account</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username" required>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" placeholder="Confirm password" required>
+
+            <button type="submit">Sign Up</button>
+
+            <a href="{% url 'login' %}">Already have an account?</a>
+        </form>
+    </div>
+{% endblock %}
